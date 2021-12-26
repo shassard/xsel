@@ -1,0 +1,11 @@
+--- xsel-1.2.0/xsel.c~	2019-02-13 13:23:06.933869121 +0000
++++ xsel-1.2.0/xsel.c	2019-02-13 13:24:28.998706282 +0000
+@@ -79,7 +79,7 @@
+ static Boolean no_daemon = False;
+ 
+ /* logfile: name of file to log error messages to when detached */
+-static char logfile[MAXFNAME];
++static char logfile[MAXFNAME+1];
+ 
+ /* fstat() on stdin and stdout */
+ static struct stat in_statbuf, out_statbuf;
